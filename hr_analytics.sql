@@ -70,7 +70,7 @@ WHERE age >= 18 AND termdate IS NULL;
 
 SELECT 
 	CASE
-		WHEN age >= 18 AND age <= 24 THEN '18-24'
+	WHEN age >= 18 AND age <= 24 THEN '18-24'
         WHEN age >= 25 AND age <= 34 THEN '25-34'
         WHEN age >= 35 AND age <= 44 THEN '35-44'
         WHEN age >= 45 AND age <= 54 THEN '45-54'
@@ -86,7 +86,7 @@ ORDER BY age_group;
 # how the gender is distributed among the age groups
 SELECT 
 	CASE
-		WHEN age >= 18 AND age <= 24 THEN '18-24'
+	WHEN age >= 18 AND age <= 24 THEN '18-24'
         WHEN age >= 25 AND age <= 34 THEN '25-34'
         WHEN age >= 35 AND age <= 44 THEN '35-44'
         WHEN age >= 45 AND age <= 54 THEN '45-54'
@@ -154,7 +154,7 @@ ORDER BY count DESC;
         ROUND((hires - terminations)/hires * 100, 2) AS net_change_percent
 FROM(
 	SELECT 
-		YEAR(hire_date) AS year,
+	YEAR(hire_date) AS year,
         COUNT(*) AS hires,
         SUM(CASE WHEN termdate IS NOT NULL AND termdate <= curdate() THEN 1 ELSE 0 END) AS terminations
         FROM hr
