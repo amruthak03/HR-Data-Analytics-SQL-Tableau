@@ -22,9 +22,10 @@ The project delves into the following questions to uncover key personnel-related
 
 ### Project Structure:
 
-1. SQL File: Contains SQL scripts for data cleaning, preprocessing, and querying.
-2. Tableau Workbook: Contains Tableau visualizations of the SQL analysis results.
-3. README.md: Provides an overview of the project, key questions addressed, project structure, and usage instructions
+1. CSV File: Contains the dataset
+2. SQL File: Contains SQL scripts for data cleaning, preprocessing, and querying.
+3. Tableau Workbook: Contains Tableau visualizations of the SQL analysis results.
+4. README.md: Provides an overview of the project, key questions addressed, project structure, and usage instructions
 
 ### Tableau Dashboard
 
